@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/addCgi/addCgi",
+    "pages/view/view",
+    "pages/kc/kc"
+  ],
+  "window": {
+    "backgroundTextStyle": "black",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "叮叮课堂",
+    "navigationBarBackgroundColor": "#ffcc00",
+    "backgroundColor": "#F2f2f2",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "black",
+    "borderStyle": "white",
+    "backgroundColor": "#E6E6FA",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home-off.png",
+        "selectedIconPath": "images/home-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/kc/kc",
+        "iconPath": "images/s21.png",
+        "selectedIconPath": "images/s22.png",
+        "text": "消息"
+      },    
+      {
+        "pagePath": "pages/kc/kc",
+        "iconPath": "images/s31.png",
+        "selectedIconPath": "images/s32.png",
+        "text": ""
+      },
+      
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/s41.png",
+        "selectedIconPath": "images/s42.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/footer-icon-04.png",
+        "selectedIconPath": "images/footer-icon-04-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "debug": true
+}

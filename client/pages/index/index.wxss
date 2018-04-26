@@ -1,0 +1,85 @@
+.swiper_box {
+    width: 100%;
+}
+
+swiper-item image {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+.flex-wrp {display: flex;}
+.bc_green {width:100%; height: 100px;}
+.left{width: 40%;height: 100px;}
+.image{width:150px;height: 100px;}
+.right{width: 60%;height: 100px;}
+.bc_red {background: red;width:100%; height: 100px;}
+.bc_blue {background: blue;width:100%; height: 100px;}
+.t1{
+  align:center;
+  color: 
+}
+
+button{
+  background: yellow;
+}
+.mini-btn{
+  position: relative;
+  left: 140px;
+  top: 20px;
+}
+
+
+.section__title{
+  width: 100%;height: 40px;background: #ffcc00;
+  display: flex;
+}
+.sec1{
+      
+      width: 90%;
+      height: 40px;
+}
+.sec2{
+     
+       width: 10%;
+      height: 40px;
+}
+
+
+.venues_box {
+    padding: 0 10rpx;
+    
+}
+
+.venues_item {
+    display: inline-block;
+    width: 49%;
+    margin:0.4% 0.5%;
+    
+    background: red;
+}
+
+.venues_item image{
+    width: 100%;
+    height: 90px;
+}
+
+
+
+
+
+.f1{
+  width: 100%;
+  height: 100px;
+  display: flex;
+ 
+}
+.flex1{
+      background: red;
+      width: 50%;
+      height: 100px;
+}
+.flex2{
+      background: green;
+       width: 50%;
+      height: 100px;
+}
