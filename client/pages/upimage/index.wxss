@@ -1,0 +1,23 @@
+/* pages/upimage/index.wxss */
+@import "../../utils/weui.wxss";
+.page-body{
+  width: 100%;
+}
+.b1{
+  width: 100%;
+}
+.icon-box{
+  margin-bottom: 30rpx;
+  padding: 0 75rpx;
+  display: flex;
+  align-items: center;
+}
+.icon-box-img{
+  margin-right: 30rpx;
+}
+.icon-box-ctn{
+  flex-shrink: 100;
+}
+.icon-box-title{
+  font-size: 34rpx;
+}

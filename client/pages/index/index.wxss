@@ -1,0 +1,217 @@
+
+.mid{
+  height: 200rpx;
+  width: 60rpx;
+  background: #FFD700;
+  position: absolute;
+  top:0%;
+  left: 0rpx;
+}
+.top{
+  width: 12%;
+  height: 100%;
+ 
+  float: left;
+}
+.nn{
+  width: 100%;
+  height: 90px;
+
+}
+.mm{
+  width: 100%;
+  height: 20px;
+ 
+  text-align: center;
+  font-size: small;
+}
+.page-section-spacing{
+  margin-top: 0rpx;
+  margin-left: 60rpx;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 200rpx;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 200%;
+  height: 200rpx;
+}
+.sr1{
+   width: 100%;
+   height: 90px;
+     float: left;
+     border-radius:50%
+}
+
+#demo1{
+  
+  display:inline-block;  
+     flex-direction:row;
+     background: yellow;
+}
+
+
+
+
+.swiper_box {
+    width: 100%;
+    text-align: center;
+}
+
+swiper-item image {
+    width: 100%;
+    height: 100%;
+    margin:0rpx 15rpx 15rpx 15rpx;
+    display: inline-block;
+    overflow: hidden;
+   
+}
+.flex-wrp {display: flex;}
+.bc_green {width:100%; height: 100px;}
+.left{width: 40%;height: 100px;}
+.image{width:150px;height: 100px;}
+.right{width: 60%;height: 100px;}
+.bc_red {background: red;width:100%; height: 100px;}
+.bc_blue {background: blue;width:100%; height: 100px;}
+
+
+button{
+  background: yellow;
+}
+.mini-btn{
+  position: relative;
+  left: 140px;
+  top: 20px;
+}
+
+
+.section__title{
+  width: 100%;height: 40px;
+  display: flex;
+}
+.sec1{   
+      width: 10%;
+      height: 40px;
+     
+}
+.sec2{
+     
+       width: 10%;
+      height: 40px;
+}
+.sec3{
+      width: 80%;
+      height: 40px;
+      text-align:left;
+}
+.zx1{
+    position:  relative;
+    top:8rpx;
+    
+     font-weight:600;
+}
+.d{
+  height: 200rpx;
+  width: 100%;
+  
+}
+.d1{
+  height: 90%;
+  width: 45%;
+  background: green;
+  margin: 10rpx 15rpx 10rpx 20rpx;
+  float: left;
+   border-radius:10%;
+}
+.d2{
+  height: 90%;
+  width: 45%;
+  background: blue;
+  margin: 10rpx 15rpx 10rpx 20rpx;
+  float: left;
+  border-radius:10%;
+}
+.d11{
+  font-size:small;
+  font-weight: bold;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  color: white;
+}
+.d12{
+   font-size:small;
+   margin-top: 23rpx;
+  margin-left: 23rpx;
+  color: white;
+}
+.a{
+  height: 170rpx;
+  width: 90%;
+  background:#FFFACD;
+  margin-left:20rpx; 
+  margin-bottom: 20rpx;
+   display: flex;
+}
+.ai{
+  width: 30%;
+  height: 100%;
+ 
+}
+.aii{
+  width: 100%;
+  height: 100%;
+     border-radius:10%;
+}
+.at{
+width: 75%;
+margin-left:20rpx; 
+height: 100%;
+font-size: 35rpx;
+}
+.att2{
+ font-size: 25rpx;
+margin-top: 25rpx;
+
+}
+.venues_box {
+    padding: 0 10rpx;
+    
+}
+
+.venues_item {
+    display: inline-block;
+    width: 32%;
+    margin:0.4% 0.5%;
+    text-align: center;
+  
+}
+
+.venues_item image{
+    width: 100%;
+    height: 90px;
+}
+
+
+
+
+
+.f1{
+  width: 100%;
+  height: 100px;
+  display: flex;
+ 
+}
+.flex1{
+      background: red;
+      width: 50%;
+      height: 100px;
+}
+.flex2{
+      background: green;
+       width: 50%;
+      height: 100px;
+}

@@ -1,0 +1,55 @@
+<view class="page-body" >
+   <view class="page-section tc" wx:for="{{rr}}">
+  
+    <video id="myVideo" src="{{item.video}}" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+
+     <view class='mid'>
+         <text>{{item.name}}</text>
+     </view>
+
+<!--弹幕-->
+
+    <view class="weui-cells">                
+          <input bindblur="bindInputBlur" class="weui-input" type="text" placeholder="在此处输入弹幕内容" />                
+          <button bindtap="bindSendDanmu" class="page-body-button" type="primary" formType="submit">发送弹幕</button> 
+   </view>
+<view class='zhong'>
+<!--评论-->
+    <view class='pl'>
+    <view class='p2' ><text>评论</text> </view>
+    <view class='p3' wx:for="{{pp}}">
+    <view class='p4'>
+      <view class='p7'>
+      <image class='pimage' src='{{item.image}}'></image>
+      </view>
+      <view class='p6'>
+      <text>{{item.name}}</text>
+      </view>
+      <view class='p41' bindtap='zan' hover-class='navigator-hover'  hover-stay-time='500'  >
+        <image  class='p4image' src='../../images/素材11.png'></image>
+      </view>
+    </view>
+    <view class='p5'>
+      <text>{{item.message}}</text>
+      </view>
+    </view>
+    </view>  
+<!--推荐-->
+  <view class='tj'></view>
+    <view class='t1'>相关推荐</view>
+    <view class='t2' wx:for="{{tt}}">
+      <view class='t3'>
+        <image class='timage' src='{{item.image}}'></image>
+      </view>
+      <view class='t4'>
+        <text >{{item.name}}</text>
+        </view>
+    </view>
+  </view>
+  </view>
+
+  
+  <view class='di'></view>
+</view>
+<!--空白-->
+

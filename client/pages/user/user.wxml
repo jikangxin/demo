@@ -1,0 +1,95 @@
+ <!--login-->
+ <view class="userinfo" bindtap="login">
+        <image
+            class="userinfo-avatar"
+            src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}"
+            background-size="cover"
+        ></image>
+        <view>
+            
+               <button open-type="getUserInfo">{{logged ? userInfo.nickName : '登录'}}</button>
+            <text class="userinfo-nickname" wx:if="{{logged}}">{{userInfo.lastLoginTime}}</text>
+           
+        </view>
+  
+</view>
+<view class='z' >
+    <navigator url='../location/index'>
+    <view class='z1'><text class='z11'>个人信息</text></view>
+    <view class='z2'><image class='z22' src='../../images/ssa.png'></image> </view>
+    </navigator>
+    </view>
+<view class='w'>
+
+  <navigator  url="{{u1}}"  >
+  <view class='w1' wx:if="{{aa}}" bindtap='aa'>
+   <view class="w2">{{b}}</view>
+      <view class='w2'>我发布的</view>
+  </view>
+  <view class='w10' wx:if="{{bb}}" bindtap='bb'>
+   <view class="w2">{{b}}</view>
+      <view class='w2'>我发布的</view>
+  </view>
+  </navigator>
+
+ <navigator  url="{{u1}}" >
+  <view class='w1' wx:if="{{cc}}" bindtap='gz'>
+  <view class='w2'>{{a2}}</view>
+    <view class='w2'>关注</view>
+  </view>
+  <view class='w10' wx:if="{{dd}}"  bindtap='dd'>
+  <view class='w2'>{{a2}}</view>
+    <view class='w2'>关注</view>
+  </view>
+  </navigator>
+
+ <navigator  url="{{u1}}">
+  <view class='w1' wx:if="{{ee}}"  bindtap='w33'>
+    <view class='w2'>{{a3}}</view>
+    <view class='w2'>粉丝</view>
+  </view>
+  <view class='w10' wx:if="{{ff}}" bindtap='ff'>
+    <view class='w2'>{{a3}}</view>
+    <view class='w2'>粉丝</view>
+  </view>
+   </navigator>
+
+</view>
+
+<view class='min' wx:if="{{w11}}" >
+  <view class='tu'>图片</view>
+  <view class='m1' wx:for="{{sr}}" >
+      <image class='m2' src='{{item}}'></image>
+  </view>
+  <view class='sp'>视频</view>
+  <view class='m1' wx:for="{{srv}}" >
+      <video class='m2' src="{{item}}"></video>
+  </view>
+</view>
+
+<view class='min2' wx:if="{{w22}}">
+
+  <view class='min222' wx:for="{{ss}}" wx:key='1'>
+   <navigator  url='../teacher/index?id={{item.Id}}'>
+    <view class='im'> <image class='sd' src='{{item.image}}'></image></view>
+   
+    <view class='mt'><text class='tttt'>{{item.name}}</text></view>
+      </navigator>
+  </view>
+
+
+</view>
+
+<view class='min3' wx:if="{{w33}}">
+  <view class='min33' wx:for="{{sa}}">
+  <navigator  url='../teacher/index?id={{item.Id}}'>
+  <view class='min333'>
+    <view class='im'> <image class='sd' src='{{item.image}}'></image></view>
+   
+    <view class='mt'><text class='tttt'>{{item.name}}</text></view>
+
+  </view>
+  </navigator>
+  </view>
+</view>
+

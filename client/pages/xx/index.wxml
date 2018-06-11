@@ -1,0 +1,11 @@
+<!--pages/xx/index.wxml-->
+<navigator src="{{}}">
+<image class='i'  src='{{i1}}'></image>
+</navigator>
+ <view class="userinfo" bindtap="login">
+        
+        <view>
+            <text class="userinfo-nickname">{{logged ? userInfo.nickName : '登录'}}</text>
+            <text class="userinfo-nickname" wx:if="{{logged}}">{{code}}</text>
+        </view>
+</view>

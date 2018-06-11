@@ -1,0 +1,145 @@
+/* pages/user/user.wxss */
+.userinfo, .uploader, .tunnel {
+    margin-top: 40rpx;
+    height: 140rpx;
+    width: 100%;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 300ms ease;
+
+}
+
+.userinfo-avatar {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    font-size: 32rpx;
+    color: #007AFF;
+    
+}
+.z{
+  width: 100%;
+  height: 110rpx;
+   border: 1px solid rgba(0, 0, 0, .1);
+
+}
+.z1{
+    width: 93%;
+    height: 100%;
+    float: left;
+
+}
+.z11{
+position:relative;
+top: 30rpx;
+left: 20rpx;
+}
+.z2{
+  width: 7%;
+  height: 60rpx;
+  float: left;
+
+}
+.z22{
+  width: 100%;
+  height: 100%;
+  position:relative;
+  top: 26rpx;
+}
+.w{
+  height: 110rpx;
+  width: 100%;
+   border: 1px solid rgba(0, 0, 0, .1);
+   text-align: center;
+ 
+}
+.w1{
+  float: left;
+  width: 33%;
+  height: 100%;
+
+}
+.w10{
+  float: left;
+  width: 33%;
+  height: 100%;
+    color:#000080;
+    font-weight:bold;
+    
+}
+.min{
+  width:100%;
+  height: 600rpx;
+
+}
+.tu{
+  width: 100%;
+  height: 55rpx;
+  background: yellowgreen;
+}
+.sp{
+  width: 100%;
+  height: 55rpx;
+  background: yellowgreen;
+  float: left;
+}
+.m1{
+  width: 32.5%;
+  height: 200rpx;
+  float: left;
+  margin: 2rpx;
+
+}
+.m2{
+  width: 100%;
+  height: 100%;
+}
+
+.min2 .min3{
+  width:100%;
+  height: 500rpx;
+   
+}
+.min22 .min33{
+  width:100%;
+  height: 20%;
+   
+}
+.min222 .min333{
+  width:100%;
+  height: 100rpx;
+ 
+}
+.im{
+  width: 25%;
+  height: 95rpx;
+float: left;
+
+
+}
+.sd{
+  width: 100%;
+  height: 95rpx;
+  border-radius: 50%;
+  
+}
+.mt{
+  width: 75%;
+  height: 95rpx;
+
+  float: left;
+}
+.tttt{
+ position: relative;
+ left: 30rpx;
+ top:30rpx;
+}
