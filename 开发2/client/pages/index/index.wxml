@@ -1,0 +1,139 @@
+
+
+
+ <!--轮播图-->
+    <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" circular='true' previous-margin='25rpx'                 next-margin='40rpx' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+    <block wx:for="{{i}}" wx:key="*this">
+          <swiper-item>
+              <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+    </block>
+    </swiper>
+  
+<view class='hhh' >
+<!-- <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="head1" style=' background-color: #fff !important' >
+     <image src="../../images/search-pic.png" class="h0"  formType="submit"/>
+      <input class="h1" name="input"placeholder="请输入搜索内容" />
+      
+        <button class='h2' type="primary" size="mini" formType="submit">搜索</button> 
+    </view>
+  </form> -->
+
+   <form catchsubmit="formSubmit" catchreset="formReset" id="search-form">
+            <view class="search-pancel">
+                <input value="" id="search-input" name="input" confirm-type="search" class="search-input" placeholder="搜索你感兴趣的内容..." bindconfirm="formSubmit"></input>
+                <button class="search-button" form-type="submit" size="mini" plain="true">
+                    <icon type="search" color="#959595" size="12" />
+                </button>
+            </view>
+        </form>
+</view>
+<!--展示一-->
+
+  <view class="section__title" style="flex-direction:row;">
+    <view class='sec1' >
+      <image style="width:100%;height:35px;"  src="{{i2}}" ></image>
+    
+    </view>
+    <view class='sec3'>
+
+       <text class='zx1'>实战课程</text>
+       <text class='zx2'>更多</text>
+    </view>
+    <view class='sec2'>
+        <navigator  url="../view/view">
+            <image class='im1' style='width:100%;height:35px;' src="{{i3}}"></image>
+        </navigator>
+    </view>
+  </view>
+<!--图片区-->
+<view class="page-section-spacing">
+   <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" >
+    <view  class="d" style="flex-direction:row;">
+           
+      <view class='d1' wx:for="{{sz}}" style=" background-image: url('{{item.image}}'); "> 
+        <navigator url='../player/index?kid={{item.kid}}' >
+
+          <text class='d11'>{{item.name}}</text>
+         <view class='d12'>{{item.text}}</view>
+        </navigator>
+      </view>
+
+       </view>
+  </scroll-view>
+</view>
+
+   <view class='a' wx:for="{{a}}" wx:key="id" id="{{item.kid}}"  bindtap='aa' >
+      
+        <view   class='ai' ><image class='aii' src='{{item.image}}'></image> </view>
+        
+      <view class='at'>
+        <view class='att1'> <text>{{item.name}}</text> </view>
+        <view  class='att2'><text decode="{{true}}">{{item.me}}</text></view>
+      </view>
+      
+   </view>
+    <!-- <view class="venues_list" >
+        <block wx:for="{{lx}}" wx:key="item.id">
+           <view class="venues_item">
+                <navigator url="../player/index?kid={{item.kid}}">
+                    <image src="{{item.image}}"/>
+                    <text>{{item.name}}</text>
+                </navigator>
+            </view>
+        </block>
+    </view>
+ -->
+
+<!--展示二-->
+  <view class="section__title" style="flex-direction:row;">
+    <view class='sec1' >
+      <image style="width:100%;height:35px;"  src="{{i2}}" ></image>
+    
+    </view>
+    <view class='sec3'>
+
+       <text class='zx1'>新手入门</text>
+        <text class='zx2'>web主流前端框架</text>
+    </view>
+    <view class='sec2'>
+        <navigator  url="../view/view">
+            <image class='im1' style='width:100%;height:35px;' src="{{i3}}"></image>
+        </navigator>
+    </view>
+  </view>
+  <!--图片区-->
+    <!-- <view class="venues_list">
+        <block wx:for="{{wx}}">
+           <view class="venues_item">
+                <navigator url="../player/index?kid={{item.kid}}">
+                    <image src="{{item.image}}"/>
+                    <text>{{item.name}}</text>
+                </navigator>
+            </view>
+        </block>
+    </view> -->
+  <view class="page-section-spacing">
+   <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" >
+    <view  class="d" style="flex-direction:row;">
+          
+      <view class='d1' wx:for="{{xs}}" style=" background-image: url('{{item.image}}'); "> 
+      <navigator url='../player/index?kid={{item.kid}}' >
+          <text class='d11'>{{item.name}}</text>
+         <view class='d12'>{{item.text}}</view>
+        </navigator>
+      </view>
+
+     </view>
+  </scroll-view>
+</view>
+   <view class='a' wx:for="{{xs}}"  wx:key="id" id="{{item.kid}}"  bindtap='aa' >
+  
+        <view class='ai'><image class='aii' src='{{item.image}}'></image> </view>
+        <view class='at'>
+        <view class='att1'> <text>{{item.text}}</text> </view>
+        <view  class='att2'><text decode="{{true}}">{{item.me}}</text></view>
+        </view>
+  
+   </view>

@@ -1,0 +1,16 @@
+<view class="t">
+   <image class='i' src='../../images/se.png'></image>
+   <text class='tt'>关键词：{{c}}</text>
+</view>
+ <view class='a' wx:for="{{a}}" wx:key="id" id="{{item.kid}}"  bindtap='aa' >
+      
+        <view   class='ai' ><image class='aii' src='{{item.image}}'></image> </view>
+        
+      <view class='at'>
+        <view class='att1'> <text>{{item.name}}</text> </view>
+        <view  class='att2'><text decode="{{true}}">{{item.me}}</text></view>
+      </view>
+      
+</view>
+
+<view class="cate-title">无更多课程</view>

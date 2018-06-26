@@ -1,0 +1,82 @@
+/* pages/search/index.wxss */
+.t{
+  width: 100%;
+  height: 280rpx;
+
+}
+.i{
+  width: 100%;
+  height: 250rpx;
+  opacity:0.6;
+ filter:alpha(opacity=40);
+}
+.tt{
+  font-size: 60rpx;
+  color: #708090;
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+}
+.a{
+  height: 150rpx;
+  width: 90%;
+  background:#FFFACD;
+  margin-left:20rpx; 
+  margin-bottom: 20rpx;
+   display: flex;
+    border-bottom: 1px solid #dedede;
+}
+.ai{
+  width: 30%;
+  height: 100%;
+ 
+}
+.aii{
+  width: 100%;
+  height: 100%;
+     border-radius:10%;
+}
+.at{
+width: 75%;
+margin-left:20rpx; 
+height: 100%;
+font-size: 35rpx;
+}
+.att1{
+   font-size: 30rpx;
+   margin-top: 15rpx;
+
+}
+.att2{
+ font-size: 25rpx;
+margin-top: 25rpx;
+
+}
+.cate-title{
+    position: relative;
+    height: 30rpx;
+    line-height: 30rpx;
+    padding:30rpx 0 55rpx;
+    text-align: center;
+    color: #AB956D;
+    font-size: 33rpx;
+  
+}
+.cate-title::before{
+    position: absolute;
+    left: 130rpx;
+    top: 43rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: #AB956D;
+}
+.cate-title::after{
+    position: absolute;
+    right: 130rpx;
+    top: 43rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: #AB956D;
+}

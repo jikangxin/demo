@@ -1,0 +1,31 @@
+<view class='all' wx:for="{{tt}}">
+<view class='top'>
+  <view class='t1' >
+    <image class='ti' src='{{item.image}}'></image>
+  </view>
+  <view class='t2'>
+    <view class='t22'>姓名：{{item.name}}</view>
+    <view class='t22'>性别：{{item.sex}}</view>
+    <view class='t22'>年龄：{{item.age}}</view>
+
+  </view>
+  
+</view>
+<view class='mid' >
+    <view class="cate-title">个人简介</view>
+    <view class='mid2'>
+    <text>{{item.message}}</text>
+    </view>
+   <view class="cate-titlee">发布课程</view>
+     <view class='a' wx:for="{{rr}}"  wx:key="id" id="{{item.kid}}"  bindtap='aa' >
+  
+        <view class='ai'><image class='aii' src='{{item.image}}'></image> </view>
+        <view class='at'>
+        <view class='att1'> <text>{{item.name}}</text> </view>
+        <view  class='att2'><text decode="{{true}}">{{item.me}}</text></view>
+        </view>
+  
+   </view>
+</view>
+</view>
+ 

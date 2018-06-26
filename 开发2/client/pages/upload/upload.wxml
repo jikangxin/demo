@@ -1,0 +1,38 @@
+
+
+<view class="cate-title">  已订阅课程</view>
+         
+
+<view class='kec'>
+    <view class='kec1' wx:for="{{kec}}" >
+          <view class='keci'><image class='kecii' src='{{item.image}}'></image> </view>
+       <view class='kect'>
+              <view class='kect1'>{{item.name}}</view>
+              <view class='kect2' > 
+                  <text decode="{{true}}"> {{item.me}} </text>
+               </view>
+          <navigator  url="../player/index?kid={{item.kid}}">
+              <button class="mini-btn"  type="primary" size="mini">继续学习</button>
+          </navigator>
+        </view>
+    </view>
+</view>
+    
+<!-- 
+ <view class='mid3'></view>
+
+      <view class='mid2'> 
+      
+      <view class='mid1' wx:for="{{mmm}}">
+       
+          <image class='midimage' src='{{item.image}}'></image>
+          <text class='midtext'>{{item.name}}</text>
+
+
+          <navigator  url="../player/index?kid={{item.kid}}">
+           <button class="mini-btn"  type="primary" size="mini">继续学习</button>
+          </navigator>
+
+
+      </view>
+ -->

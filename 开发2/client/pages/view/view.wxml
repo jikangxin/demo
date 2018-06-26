@@ -1,0 +1,187 @@
+
+
+<!-- <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="head1" style="background-image: url(' ../../images/66.png')">
+    
+     <image src="../../images/search-pic.png" class="h0" />
+     
+      <input class="h1" name="input"placeholder="请输入搜索内容" />
+      
+         <button class='h2' type="primary" size="mini" formType="submit">搜索</button> 
+    </view>
+
+</form> -->
+<!--搜索
+<view class="search-view" style="background:{{ scrollTop === 0 ?'-webkit-linear-gradient(top, rgba(105,195,170, 1), rgba(105,195,170, 0.3))' :( scrollTop<200 ? 'rgba(105,195,170,'+(scrollTop/400+0.3) +')' : 'rgba(105,195,170,1)')  }} ">
+    <view class="search-content">
+      <image src="../../images/search-pic.png" class="search-icon" />
+      <input placeholder="请输入搜索内容" class="search-input" maxlength="30" confirm-type="搜索" bindinput='listenerSearchInput' bindconfirm='toSearch'>
+      </input>
+      <button class='search-btn' bindtap="toSearch" >搜索
+      </button>
+    </view>
+  </view>
+-->
+<!--学霸，课程-->
+<view wx:if="{{ss}}">
+<view class='min' style="background-image: url(' ../../images/67.png')" >
+  <view class='min1'  >
+    <view  bindtap='min1' wx:if="{{m1}}">
+        <view class='min11'>讲师</view>
+    </view>
+     <view  bindtap='min111'  wx:if="{{m2}}">
+        <view class='min112'>讲师</view>
+    </view>
+  </view>
+    <view class='min2' >
+    <view bindtap='min2' wx:if="{{m3}}">
+        <view class='min22'>课程</view>
+     </view >
+     <view  bindtap='min21'  wx:if="{{m4}}">
+        <view class='min222'>课程</view>
+    </view>
+  </view>
+    <view class='min3'>
+    <view     bindtap='min3' wx:if="{{m5}}">
+        <view class='min33'>周边</view>
+    </view >
+    <view  bindtap='min31'  wx:if="{{m6}}">
+        <view class='min333'>周边</view>
+    </view>
+  </view>
+</view>
+
+<!--滚动图-->
+<view class='foot1'>
+    
+
+<!--展示-->
+  <view class='fo2'>
+
+    <!--左
+    <view class='fol1' wx:if="{{min11}}" >
+    <navigator  hover-class="navigator-hover" hover-stay-time='1000' wx:for="{{fol1}}">
+      <view class='fols1'  data-hi="{{item.kid}}"  bindtap='fols' >{{item.name}}
+      </view>
+    </navigator>   
+    </view>-->
+
+    <!--右
+    <view class='fol2'  wx:if="{{fff}}"  >
+      <navigator  bindtap='fol2' wx:for="{{tt}}" url='../teacher/index?id={{item.Id}}'>
+          <view class='fol2s'>
+              <image class='im1' src='{{item.image}}'></image>
+              <text>{{item.name}}</text>
+          </view>
+      </navigator>
+    </view>-->
+     <view class='tec'  wx:if="{{min11}}">
+     
+            <view class='cla' >
+               <view class="cate-title"> C语言讲师</view>
+            </view>
+
+            <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" >
+                <view id="demo1" class="scroll-view-item_H demo-text-1" style="flex-direction:row;">
+                
+                  <view class='top' wx:for="{{sr}}">
+                    <navigator url="../teacher/index?id={{item.id}}" >
+                        <view class='nn'>
+                          <image class='sr1' src="{{item.image}}"/>
+                        </view>
+                          <view class='mm'>
+                          <text>{{item.t2}}</text>
+                          </view>
+                      </navigator>
+                  </view>
+                
+              </view>
+              </scroll-view>
+
+              <view class='cla' >
+                <view class="cate-title">JAVA讲师</view>
+            </view>
+
+            <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" >
+                <view id="demo1" class="scroll-view-item_H demo-text-1" style="flex-direction:row;">
+                
+                  <view class='top' wx:for="{{sr}}">
+                    <navigator url="../teacher/index?id={{item.id}}" >
+                        <view class='nn'>
+                          <image class='sr1' src="{{item.image}}"/>
+                        </view>
+                          <view class='mm'>
+                          <text>{{item.t2}}</text>
+                          </view>
+                      </navigator>
+                  </view>
+                
+              </view>
+              </scroll-view>
+
+              <view class='cla' >
+                <view class="cate-title">Python讲师</view>
+            </view>
+
+            <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" >
+                <view id="demo1" class="scroll-view-item_H demo-text-1" style="flex-direction:row;">
+                
+                  <view class='top' wx:for="{{sr}}">
+                    <navigator url="../teacher/index?id={{item.id}}" >
+                        <view class='nn'>
+                          <image class='sr1' src="{{item.image}}"/>
+                        </view>
+                          <view class='mm'>
+                          <text>{{item.t2}}</text>
+                          </view>
+                      </navigator>
+                  </view>
+                
+              </view>
+              </scroll-view>
+      
+       </view>
+
+
+
+    <!--课程-->
+    
+    <view class='k1' wx:if="{{min22}}">
+       <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" >
+              <view  class="fr" style="flex-direction:row;">
+                
+                  <view class='kcc' wx:for="{{kkcc}}" wx:key="id">
+                    <view   id="{{item.id}}" class="kcn {{kkcc1==item.id ? 'av':''}}"  bindtap='swichkkcc'>
+                    
+                    <text decode="{{true}}">&nbsp;&nbsp;{{item.t}}&nbsp;&nbsp;</text>
+                    </view>
+                  </view>
+                
+              </view>
+      </scroll-view>
+      <view class='kec'>
+        <view class='kec1' wx:for="{{kec}}"  wx:key="id" id="{{item.kid}}"  bindtap='aa'>
+        
+            <view class='keci'>
+            
+            <image class='kecii' src='{{item.image}}'></image> 
+             
+            </view>
+            <view class='kect'>
+                
+                <view class='kect1'>{{item.name}}</view>
+                <view class='kect2' > 
+                <text decode="{{true}}"> {{item.me}} </text>
+                </view>
+                  
+            </view>
+            <view class='c' wx:if="{{item.new==1}}"> 
+                <text class='ci'>new</text>
+            </view>
+        </view>
+      </view>
+    </view>
+  
+</view>
+</view>
+</view>

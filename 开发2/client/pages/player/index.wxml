@@ -1,0 +1,44 @@
+<view class="page-body" >
+   <view class="page-section tc" wx:for="{{rr}}">
+  
+    <video id="myVideo" src="{{item.video}}" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+
+     <view class='mid'>
+         <text class='midt'>{{item.name}}</text>
+         <view class='c' wx:if="{{item.dy==0}}"> 
+                <text class='ci'>关注</text>
+         </view>
+         <view class='y' wx:if="{{item.dy==1}}"> 
+                <text class='ci'>已关注</text>
+         </view>
+
+     </view>
+
+   <view class="cate-title">简介</view>
+     <view class='jz'>
+         <view class='jzjz' > {{item.text}}</view>
+     </view>
+
+
+   <view class="cate-title"> 相关推荐</view>
+        <swiper class="swiper_box" indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" next-margin="40rpx" >
+            <block  wx:for="{{xs}}"  wx:key="id" id="{{item.kid}}"  bindtap='aa' >
+            <swiper-item>
+             
+  
+                  <view class='ai'><image class='aii' src='{{item.image}}'></image> </view>
+                  <view class='at'>
+                  <view class='att1'> <text>{{item.text}}</text> </view>
+                  <view  class='att2'><text decode="{{true}}">{{item.me}}</text></view>
+                  </view>
+  
+               
+            </swiper-item>
+          </block>
+          </swiper>
+    
+</view>
+</view>
+
+
