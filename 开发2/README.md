@@ -1,5 +1,5 @@
 
-![微信小程序示例图](https://github.com/jikangxin/weixin.git/picture/5_2C@HYZZF}LR{NXDBN6@OT.png)
+![微信小程序示例图](https://raw.githubusercontent.com/jikangxin/weixin/master/picture/5_2C%40HYZZF%7DLR%7BNXDBN6%40OT.png)
 
 ![开通腾讯云](https://mc.qcloudimg.com/static/img/53e34b52e098ee3a0a02ecc8fbb68a54/14.jpg)
 
